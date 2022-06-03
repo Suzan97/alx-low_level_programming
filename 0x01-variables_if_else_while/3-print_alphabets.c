@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include<stdio.h>
 /**
  * main - Entry point
@@ -9,18 +7,23 @@
 
 int main(void)
 {
-	signed char x;
-	int n;
-
-
-	for (n=97; n <= 122; n++)
+	char a = 'a';
+	
+	while (a <= 'z')
 	{
-	x = n;
-	printf("%c", x);
-	if (n == 122)
-	{
-	printf("\n");	
-	}	
+		putchar(a);
+		a++;
 	}
+	
+	a = 'A';
+	
+	while (a <= 'Z')
+	{
+		putchar(a);
+		a++
+	}
+	
+	putchar('\n');
 	return (0);
+
 }
